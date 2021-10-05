@@ -1,0 +1,223 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-10-05T21:43:39.378Z",
+    "end": "2021-10-05T21:43:41.978Z",
+    "duration": 2600,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "8ed3d627-2e25-45bf-b386-6373188e88c5",
+      "title": "",
+      "fullFile": "cypress/integration/tests/GithubNavigation.js",
+      "file": "cypress/integration/tests/GithubNavigation.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fa0e19ec-8c28-4791-be3b-979cbaa0f474",
+          "title": "Pulls page test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test the Pulls page navigation",
+              "fullTitle": "Pulls page test suite Test the Pulls page navigation",
+              "timedOut": null,
+              "duration": 2540,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {
+                "message": "AssertionError: expected 'no' to equal 'yes'\n\nBecause this error occurred during a `before all` hook we are skipping all of the remaining tests.",
+                "estack": "AssertionError: expected 'no' to equal 'yes'\n\nBecause this error occurred during a `before all` hook we are skipping all of the remaining tests.\n    at Context.eval (https://github.com/__cypress/tests?p=cypress/support/index.js:53:29)",
+                "diff": "- '\\'no\\''\n+ '\\'yes\\''\n"
+              },
+              "uuid": "7c7eebe3-0fbb-4448-94b7-e28b59d3eefe",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7c7eebe3-0fbb-4448-94b7-e28b59d3eefe"
+          ],
+          "pending": [
+            "7c7eebe3-0fbb-4448-94b7-e28b59d3eefe"
+          ],
+          "skipped": [],
+          "duration": 2540,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3f26b19f-1fc4-44ec-89db-270f6814e007",
+          "title": "Issues page test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test the Issues page navigation",
+              "fullTitle": "Issues page test suite Test the Issues page navigation",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var issuesElement = cy.findInNavBarByText(\"Issues\");\nissuesElement.should(\"exist\");\nissuesElement.should(\"have.attr\", \"aria-label\", \"Issues you created\");\nissuesElement.click();\ncy.location('pathname').should('eq', '/issues');",
+              "err": {},
+              "uuid": "f3abf6ab-483e-45f6-9902-289cfd4aa8bf",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "f3abf6ab-483e-45f6-9902-289cfd4aa8bf"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d7b925e4-a1e9-4715-ab89-d1cb477c6659",
+          "title": "Marketplace page test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test the Marketplace page navigation",
+              "fullTitle": "Marketplace page test suite Test the Marketplace page navigation",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "512db4d9-5075-4ec4-b59d-d9a96b610f4e",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [
+            "512db4d9-5075-4ec4-b59d-d9a96b610f4e"
+          ],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "e46bc88d-c011-4b5c-bcc9-dbb4a2495b69",
+          "title": "Explore page test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test the Explore page navigation",
+              "fullTitle": "Explore page test suite Test the Explore page navigation",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "4afc7cb0-b869-482b-95ed-04f4ab280916",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [
+            "4afc7cb0-b869-482b-95ed-04f4ab280916"
+          ],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.0"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
