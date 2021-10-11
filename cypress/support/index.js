@@ -23,3 +23,16 @@ import './commands'
 //     preserve: ["user_session", "_gh_sess"]
 // })
 
+
+before(function () {
+    cy.fixture("data").then(function (data) {
+        this.data = data
+    })
+    cy.loginIfNeeded()
+    cy.writeFile("support/cookies.json", cy.getCookie("_gh_sess"))
+
+})
+
+// after(function () {
+//     cy.logout()
+// })
