@@ -7,5 +7,7 @@
     "password": "YOUR-PASSWORD-COMES-HERE"
   },
   "projectId": "zr6kfh",
-  "reporter":"mochawesome"
+  "reporter":"mochawesome",
+  "testFiles": "**/*.feature"
+
 }

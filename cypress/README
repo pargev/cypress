@@ -13,6 +13,8 @@ to open Cypress
 
 ./node_modules/cypress/bin/cypress run --browser chrome --reporter mochawesome --headed --spec=cypress/integration/tests/Github.js  --env grep=Issues --env username=USERNAME --env password=PASSWORD
 
-./node_modules/cypress/bin/cypress run --browser chrome --reporter mochawesome --headed --spec=cypress/integration/tests/GithubNavigation.js  --env grep=Issues --env username=USERNAME --env password=PASSWORD
+./node_modules/cypress/bin/cypress run --browser chrome --reporter mochawesome --headed --spec=cypress/integration/tests/GithubNavigation.js  --env grep=Issues,username=USERNAME,password=PASSWORD
 
 username=USERNAME password=PASSWORD grep=Issues ./node_modules/cypress/bin/cypress run --browser chrome --reporter mochawesome --headed
+
+./node_modules/cypress/bin/cypress open  --browser chrome --env username=USERNAME,password=PASSWORD
